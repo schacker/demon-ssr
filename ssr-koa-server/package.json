@@ -1,0 +1,32 @@
+{
+  "name": "@schacker/ssr-koa-server",
+  "version": "1.0.0",
+  "description": "A simple ssr web node server",
+  "scripts": {
+    "test": "jest"
+  },
+  "bin": {
+    "ssr-server": "./bin/ssr-server"
+  },
+  "dependencies": {
+    "glob": "^7.1.3",
+    "koa": "^2",
+    "path-to-regexp": "^6.2.1",
+    "yargs": "^12.0.1"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "supertest": "^3"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16"
+  },
+  "keywords": [
+    "react",
+    "serverside-rendering"
+  ],
+  "author": "huangwei",
+  "license": "MIT"
+}

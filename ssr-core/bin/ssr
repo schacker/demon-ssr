@@ -1,0 +1,12 @@
+#!/bin/sh 
+":" //# comment; exec /usr/bin/env node --max_old_space_size=4096 "$0" "$@"
+
+const yargs = require('yargs')
+
+yargs
+  .commandDir('../dist/commands')
+  .demandCommand()
+  .alias('h', 'help')
+  .help()
+  .epilog('copyright by huangwei')
+  .argv
